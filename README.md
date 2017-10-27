@@ -1,2 +1,2 @@
-# JKP-Gradska-cistoca
-Informacioni sistem za JKP Gradska cistoca
+# Iznosenje smeca
+Informacioni sistem za sluzbu iznosenja smeca
