@@ -8,6 +8,7 @@
 %\usepackage{amssymb}
 %\usepackage{amsthm}
 \usepackage{graphicx}
+\usepackage{float}
 %\usepackage{subfig}
 \usepackage{hyperref}
 \usepackage{indentfirst}
@@ -82,12 +83,14 @@
 
 
 \section{Analiza sistema}
-\setlength{\parindent}{30pt} Postojec1i sistem sadrzhi prevelik broj zaposlenih u administraciji. Ovaj sistem je napravljen sa pokushajem da smanji broj ljudi u administraciji i sistem uchini jednako efikasnim. Takodje, u odnosu na prethodni sistem nash podrazumeva i savremeniju opremu za rad. Prikaz informaciong sistema dat je na sliciX. 
+\setlength{\parindent}{30pt} Postojec1i sistem sadrzhi prevelik broj zaposlenih u administraciji. Ovaj sistem je napravljen sa pokushajem da smanji broj ljudi u administraciji i sistem uchini jednako efikasnim. Takodje, u odnosu na prethodni sistem nash podrazumeva i savremeniju opremu za rad. Prikaz informaciong sistema dat je na slici \ref{overflow}. 
 
 \subsection{Dijagram celog sistema}
 \begin{center}
-	\includegraphics[width=15cm,height=15cm,keepaspectratio]{slike/DijagramCelogSistema}\\
-	%Opis	
+	\begin{figure}[H]
+		\includegraphics[width=15cm,height=15cm,keepaspectratio]{slike/DijagramCelogSistema}\\
+		\caption{Dijagram celog sistema \label{overflow}}
+	\end{figure}
 \end{center}
 
 \section{Sluchajevi upotrebe}
