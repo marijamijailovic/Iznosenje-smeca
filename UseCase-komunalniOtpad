@@ -1,0 +1,24 @@
+Komunalni otpad
+---------------
+
+1. Akteri: 
+	I. Koordinator za komunalni otpad
+	II. Dispecer 
+	III. Radnici
+
+2. Preduslovi:
+	I. Dispecer je poslao nedeljni spisak poslova koordinatoru za komunalni otpad
+
+4. Postuuslovi:
+	I. Otpad je dostavljen na deponiju.
+
+5. Osnovni tok:
+	1. Koordinator proverava raspolozivost radnika
+	2. Koordinator izdaje naloge radnicima
+	3. Koordinator prati radnike na terenu
+	4. Radnici odnose otpad na predvidjeno mesto
+
+6. Alternativni tokovi:
+	1.1. Nema dovoljno radnika - koordinator obavestava dispecera da se posao odlaze
+
+Specijalnih zahteva i dodatnih informacija nema.
