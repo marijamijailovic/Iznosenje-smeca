@@ -1,0 +1,10 @@
+Hemijski otpad
+• Kratak opis - Kada koordinator dobije spisak poslova, organizuje radnike na terenu da obave poslove sto efikasnije.
+• Uqesnici - Dispecer, koordinator, Radnici
+• Preduslovi - Dispecer je poslao nedeljni spisak poslova koje koordinator za hemijski otpad treba da obavi
+• Postuslovi -  koordinator je obavestio dispecera o uspesnosti poslova
+• Osnovni tok - koordinator proverava slobodne radnike. pravi plan rada za tu nedelju. koordinator izadje naloge radnicima za obavljanje poslova. koordinator nadgleda poslove na terenu (prati lokacije radnika, obilazi teren, itd..). Obavestava dispecera o uspesnosti posla. 
+• Alternativni tokovi - Nema dovoljno radne snage za obavljanje odredjenog posla, nepristpupacan teren, ili drugi problemi koji onemogucavaju izvrsenje posla. Tada koordinator obavestava dispecera da posao nije zavrsen i navodi razlog.
+• Podtokovi - Nema
+• Specijalni zahtevi - Postoji specijalna oprema koja stiti radnike od opasnog materijala.
+• Dodatne informacije - Nema
