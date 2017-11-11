@@ -1,0 +1,32 @@
+Reciklazni otpad
+----------------
+
+1. Kratak opis: U reciklazni otpad spadaju plasticne ambalaze, sve vrste kartona i papira, kucni i elektricni uredjaji. 
+				Kucni i elektricni uredjaji se otkupljuju od klijenta i skladiste u magacin.
+2. Akteri: 
+	I. Koordinator za reciklazni otpad
+	II. Magacioner
+	III. Dispeceri 
+	IV. Radnici
+
+3. Preduslovi:
+	I. Dispecer je poslao nedeljni spisak poslova koordinatoru za reciklazni otpad
+
+4. Postuuslovi:
+	I. Magacioner je uspesno skladistio otpad u magacin.
+	II. Otpad je dostavljen centru za reciklazu.
+
+5. Osnovni tok:
+	1. Koordinator proverava raspolozivost radnika
+	2. Koordinator izdaje naloge radnicima
+	3. Koordinator prati radnike na terenu
+	4. Radnici odnose otpad na predvidjeno mesto
+
+6. Alternativni tokovi:
+	1.1. Nema dovoljno radnika - koordinator obavestava dispecera da se posao odlaze
+7. Podtokovi:
+	4.1. Radnici dostavljaju plastiku, kartone i papire u reciklazni centar
+	4.2.1. Radnici dostavljaju kucne i elektricne uredjaje magacioneru
+	4.2.2. Magacioner rasporedjuje u magacin
+
+Specijalnih zahteva i dodatnih informacija nema.
