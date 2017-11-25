@@ -1,0 +1,12 @@
+Naziv: Slanje faktura
+Akteri: Klijent i dispecer
+Kratak opis:
+Preduslovi: Zahtev je pravilno podnet i koordinator je obradio zahtev
+Postuslovi: Klijent je obavesten o stanju njegovog zahteva
+Osnovni tok: 1. Dispecer proverava stanje baze
+             2. Dispecer kontaktira klijenta
+Podtokovi:
+            2.1. Dispecer obavestava klijenta o vremenu izvrsavanja posla
+            2.2. Dispecer obavestava klijenta o odlaganju posla
+
+Alternativni tok: Nema.
