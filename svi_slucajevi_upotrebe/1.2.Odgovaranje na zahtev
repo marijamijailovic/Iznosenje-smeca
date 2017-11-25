@@ -1,0 +1,15 @@
+Naziv: Odgovaranje na zahtev
+Akteri: Klijent i dispecer
+Kratak opis:
+    Dispecer proverava da li posao moze da se obavi ove nedelje.
+    Ako moze obavestava klijenta o vremenu izvrsavanja, u suprotnom
+    ga obavestava da se posao odlaze do daljnjeg
+Preduslovi: Zahtev je pravilno podnet i koordinator je obradio zahtev
+Postuslovi: Klijent je obavesten o stanju njegovog zahteva
+Osnovni tok: 1. Dispecer proverava stanje baze
+             2. Dispecer kontaktira klijenta
+Podtokovi:
+            2.1. Dispecer obavestava klijenta o vremenu izvrsavanja posla
+            2.2. Dispecer obavestava klijenta o odlaganju posla
+
+Alternativni tok: Nema.

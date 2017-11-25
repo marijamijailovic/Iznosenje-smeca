@@ -1,0 +1,9 @@
+Naziv: Evidentiranje slobodnih dana
+Akteri: Upravnik
+Kratak opis:
+    Upravnik evidentira u bazi da je radnik na odmoru/vraca se na posao.
+Preduslovi: Radnik ima jos slobodnih dana/ isteklo mu je vreme odmora.
+Postuslovi: Radnik je na odmoru/vraca se na posao
+Osnovni tok: 1. Upravnik salje radnika na odmor.
+Podtokovi: Nema.
+Alternativni tok: Nema.
