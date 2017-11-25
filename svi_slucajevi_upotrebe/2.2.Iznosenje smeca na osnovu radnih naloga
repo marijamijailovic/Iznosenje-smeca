@@ -1,0 +1,13 @@
+Naziv: Iznosenje smeca na osnovu radnih naloga
+Akteri: Koordinator i radnici
+Kratak opis:
+    Radnici preuzimaju radne naloge i izlaze na teren. Obavestavaju
+    koordinatora o stanju na terenu.
+Preduslovi: Izdati su radni nalozi
+Postuslovi: Koordinator je obavesten o ishodu posla
+Osnovni tok: 1. Radnici preuzimaju radne naloge
+             2. Radnici izlaze na teren
+             3. Radnici obavestavaju koordinatora o ishodu posla
+Podtokovi: Nema.
+Alternativni tok:
+Specijalni zahtevi: 

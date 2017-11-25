@@ -1,0 +1,13 @@
+Naziv: Pravljenje radnih naloga
+Akteri: Koordinator
+Kratak opis:
+    Koordinator na osnovu podataka iz baze kreira radne naloge
+Preduslovi: U bazi su azurirane informacije o poslovima i radnicima
+Postuslovi: Kreirani su radni nalozi
+Osnovni tok: 1.U bazi proverava spisak poslova i raspolozivost radne snage
+             2.Kreira radne naloge
+             3.Azurira bazu
+Podtokovi:
+            Nema
+
+Alternativni tok: Nema.
