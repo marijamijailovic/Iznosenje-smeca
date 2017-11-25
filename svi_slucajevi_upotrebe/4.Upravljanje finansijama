@@ -1,0 +1,9 @@
+Naziv: Magacioniranje
+Akteri: Upravnik i magacioner
+Kratak opis:
+    Magacioner se bavi skladistenjem robe u magacinu. Upravnik upravlja prodajom artikala iz magacina.
+Preduslovi: Radnici su doneli robu na skladistenje.
+Postuslovi: Roba je upisana u bazu.
+Osnovni tok: 1.Magacioner skladisti robu
+Podtokovi: Nema.
+Alternativni tok: Nema.

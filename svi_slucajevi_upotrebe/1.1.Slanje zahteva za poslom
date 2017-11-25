@@ -1,0 +1,15 @@
+Naziv: Slanje zahteva za poslom
+Akteri: Klijent i dispecer
+Kratak opis:
+    Klijent moze da kontaktira sluzbu preko online formulara ili telefonom.
+Preduslovi: Nema
+Postuslovi: dispecer je uspesno evidentirao zahtev klijenta
+Osnovni tok: 1. Klijent kontaktira sluzbu
+             2. Dispecer evidenitra zahtev
+Podtokovi:
+            1.1. Klijent popunjava online formular
+            1.2. Klijent poziva dispecer-a
+
+Alternativni tok:
+            U slucaju nepravilnosti u formularu, 
+            dispecer kontaktira klijenta koriguje zahtev.
