@@ -1,8 +1,7 @@
 \documentclass[10 pt]{article}
 
-\usepackage[OT1, OT2]{fontenc}
-\newcommand{\Lat}{\fontencoding{OT1}\selectfont}
-\usepackage[english, serbian]{babel}
+\usepackage[OT2]{fontenc}
+\usepackage[serbian]{babel}
 \usepackage[top= 27mm, bottom=27mm, left=25mm, right=25mm]{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -13,8 +12,8 @@
 \usepackage{subfig}
 \usepackage{hyperref}
 \usepackage{indentfirst}
-\usepackage{enumitem}
-\setlist[enumerate]{label*=\arabic*.}
+%\usepackage{enumitem}
+%\setlist[enumerate]{label*=\arabic*.}
 
 \renewcommand*\contentsname{Sadrzhaj:}
 \renewcommand{\figurename}{Slika}
@@ -135,9 +134,9 @@
 			
 			\item \textit{Podtokovi} 
 				\begin{enumerate}
-					%\item Klijent kontaktira sluzhbu: 
+					\item Klijent kontaktira sluzhbu: 
 					\begin{enumerate}
-						\setcounter{enumi}{1}
+						%\setcounter{enumi}{1}
 						\item Klijent popunjava online formular
 						\item Klijent poziva dispechera
 					\end{enumerate}
@@ -174,8 +173,9 @@
 		
 		\item \textit{Podtokovi} 
 		\begin{enumerate}
+				\item Dispecher kontaktira klijenta
 				\begin{enumerate}
-					\setcounter{enumi}{2}
+				%	\setcounter{enumi}{2}
 					\item Dispecher obaveshtava klijenta o vremenu izvrshavanja posla
 					\item Dispecher obaveshtava klijenta o odlaganju posla
 				\end{enumerate}

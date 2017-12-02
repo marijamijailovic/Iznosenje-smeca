@@ -1,0 +1,19 @@
+Naziv: Iznosenje opasnog otpada
+
+Kratak opis:
+    Sluzba se bavi odnosenjem opasnog otpada koji podrazumeva:
+    hemikalije(zapaljive,nezapaljive),
+    medicinski otpad(spricevi, vate, zavoji, gips,..),
+    radioaktivni otpad
+
+Postuslov:
+  1) Otpad je na spaljivanju.
+
+Podtokovi:
+  3.1) U slucaju iznosenja hemikalija stavljaju se u  TODO
+  3.2) U slucaju iznosenja medicinskog otpada vrsi se klasifikacija na:
+        - plastiku
+        - metal
+        - karton
+        - vate,zavoje,gaze,konce
+  3.3) U slucaju radioaktivnog otpada, potrebno je odloziti otpad u metalne kutije i kapsule
