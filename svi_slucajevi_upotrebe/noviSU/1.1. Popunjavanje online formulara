@@ -1,0 +1,27 @@
+
+Popunjavanje online formulara
+
+Kratak opis : Klijent kontaktira sluzbu tako sto popunjava online formular.
+
+Akteri : Klijent i dispecer
+
+Preduslovi : Internet konekcija je stabilna, sajt je ispravan.
+
+Postuslovi : dispecer je uspesno evidentirao zahtev klijenta u bazu podataka.
+
+Osnovni tok :
+			1. Klijent pristupa sajtu sluzbe.
+			2. Klijent popunjava formular.
+			3. Klijent potvrdjuje zeljenu uslugu klikom na "posalji".
+			4. Dispecer proverava formular.
+			5. Dispecer upisuje podatke iz formulara u sistem.
+			6. Sistem obavestava klijenta da je njegov zahtev uspesno primljen.
+			
+			
+Alternativni tok :
+			3. Posao je nemoguce izvrsiti tog datuma kada je klijent zahtevao :
+				- Obavestava se klijent i slucaj upotrebe se vraca na korak 2
+
+Dodatne informacije:
+					Formular sadrzi sledece informacije : ime, prezime, adresu, tip otpada, broj telefona, datum kada klijent zeli da se otpad iznese.
+					

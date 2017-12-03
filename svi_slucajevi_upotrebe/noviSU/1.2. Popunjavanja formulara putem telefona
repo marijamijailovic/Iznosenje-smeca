@@ -1,0 +1,26 @@
+
+Popunjavanja formulara putem telefona
+
+Kratak opis : Klijent kontaktira sluzbu putem telefona
+
+Akteri : Klijent i dispecer.
+
+Preduslovi : Klijent kontaktira sluzbu u toku  radnog vremena, dispecer je na svom radnom mestu,
+			baza je ispravna.
+			
+Postuslovi :  dispecer je uspesno evidentirao zahtev klijenta u bazu podataka.
+			
+Osnovni tok : 
+			1. Klijent poziva sluzbu.
+			2. Klijent dispeceru saopstava sve potrebne informacije u vezi sa zahtevom.
+			3. Dispecer potvrdjuje zahtev.
+			4. Dispecer upisuje podatke u sistem.
+			
+Alternativni tok :
+			3. Posao je nemoguce izvrsiti tog datuma kada je klijent zahtevao :
+				- Obavestava se klijent i slucaj upotrebe se vraca na korak 2.		
+
+
+Dodatne informacije : 
+					Klijent prilikom kontaktira navodi sledece informacije : 
+					ime, prezime, adresu, tip otpada, broj telefona, datum kada zeli da se otpad iznese.

@@ -1,0 +1,17 @@
+Otpustanje radnika
+
+Akteri : Upravnik
+
+Preduslovi : Upravnik ima sve potrebne informacije o zaposlenom kog zeli da otpusti.
+
+Postuslovi : Zaposleni je izbrisan iz sistema.
+
+Osnovni tok :
+			1. Upravnik pristupa delu sistema za pruzanje informacija o zaposlenima.
+			2. Upravnik pronalazi zaposlenog kog zeli da otupusti.
+			3. Upravnik selektuje zaposlenog i klikom na opciju "izbrisi" brise zaposlenog iz sistema.
+			4. Sistem obavestava upravnika o uspesnom brisanju bivseg zaposlenog.
+			
+Alternativni tok:
+			4. Sistem obavestava upravnika da radnik nije uspesno obrisan. 
+				- Slucaj upotrebe se nastavlja  od koraka 2.
