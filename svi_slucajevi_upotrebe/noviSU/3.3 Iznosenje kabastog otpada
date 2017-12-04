@@ -1,0 +1,12 @@
+Naziv: Iznosenje kabastog otpada
+
+Kratak opis:
+    Kabasti otpad obuhvata namestaj (kreveti, stolovi, stolice, plakari i sl.)
+    i belu tehniku (velike i male kucne uredjaje).
+
+Postuslov:
+    Otpad je na deponiji.
+
+Podtokovi:
+    3.1) Radnici odlazu otpad u kamion.
+    3.2) Vozaci odvoze otpad na deponiju.

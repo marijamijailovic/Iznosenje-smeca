@@ -1,0 +1,32 @@
+Naziv: Procenjivanje vrednosti elektricnih uredjaja
+
+Kratak opis:
+  Prilikom zahteva koji se tice iznosenja elektricnog otpada, na teren se prvo salje Menadzer prodaje,
+  kako bi procenio vrednost uredjaja. Uredjaji koji su procenjuju su:
+    laptopovi,
+    desktop racunari,
+    televizori,
+    telefoni,
+    konzole za video igre
+
+Akteri:
+  Menadzer prodaje - izlazi na teren radi procenjivanja novcane vrednosti uredjaja.
+  Dispecer - prima zahteve od klijenta
+
+Preduslov:
+  Prilikom slanja zahteva klijent je obavesten o izlasku menadzera prodaje na teren.
+  Dispecer je uspesno zabelezio zahtev klijenta.
+  Menadzer prodaje je na svom radnom mestu.
+
+Postuslov:
+  Baza je azurirana.
+
+Osnovni tok:
+  1) Dispecer obavestava menazera prodaje da je stigao zahtev za iznosenje elektricnog otpada.
+  2) Menadzer prodaje izlazi na teren radi procene.
+  3) Menadzer prodaje vrsi procenu.
+  4) Menadzer prodaje se vraca u firmu.
+
+Podtokovi:
+  4.1) U slucaju da su pregovori zavrseni negativno, menadzer prodaje brise zahtev iz baze.
+  4.2) U slucaju da su pregovori zavrseni uspesno, menadzer prodaje dopunjuje zahtev sa procenjenom vrednoscu.

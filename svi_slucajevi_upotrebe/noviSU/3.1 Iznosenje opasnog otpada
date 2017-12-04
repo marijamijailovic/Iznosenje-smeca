@@ -3,17 +3,33 @@ Naziv: Iznosenje opasnog otpada
 Kratak opis:
     Sluzba se bavi odnosenjem opasnog otpada koji podrazumeva:
     hemikalije(zapaljive,nezapaljive),
-    medicinski otpad(spricevi, vate, zavoji, gips,..),
-    radioaktivni otpad
+    medicinski otpad(spricevi, vate, zavoji, gips, infektivni otpad,
+      neiskorisceni lekovi (ili kojima je istekao rok upotrebe)...),
+    radioaktivni otpad (- kontaminirani papir, vata, PVC i razna zaštitna oprema i
+      - kontaminirani ili aktivirani metalni i plastični delovi različitih oblika i dimenzija,
+      - Tečni radioaktivni otpad;
+      - Suv i čvrst radioaktivni otpad koji se deli na  dve  podkategorije:
+        otpad  koji  može da se presuje i otpad koji ne može da se presuje;
+      - Igle i oštri metalni predmeti;
+      - Plastika)
+
+Preduslovi:
+  Medicinski otpad je prilikom nastanka odlozen u kese i kante obojene zutom bojom.
+  Hemijski otpad je prilikom nastanka odlozen u kese i kante obojene crvenom bojom.
+  Radioaktivni otpad je upakovan u burad, kapsule ili providne kese.
+  Predmeti u kojima se prenosi su oznaceni znakom Radioaktivni otpadni materijal.
+  Korisnik usluga poseduje Dokument o kretanju otpada.
 
 Postuslov:
-  1) Otpad je na spaljivanju.
+  Otpad je dostavljen na odgovarajucu lokaciju.
+  Koordinatoru je dostavljen Dokument o kretanju otpada.
 
 Podtokovi:
-  3.1) U slucaju iznosenja hemikalija stavljaju se u  TODO
-  3.2) U slucaju iznosenja medicinskog otpada vrsi se klasifikacija na:
-        - plastiku
-        - metal
-        - karton
-        - vate,zavoje,gaze,konce
-  3.3) U slucaju radioaktivnog otpada, potrebno je odloziti otpad u metalne kutije i kapsule
+  3.1) Radnici odlazu radioaktivni otpad u kamion za tu vrstu otpada.
+  3.2) Radnici odlazu hemijski i medicinski otpad u kombi.
+  3.3) Vozaci prevoze hemijski i medicinski otpad na deponiju (gde se kasnije sortira i preradjuje).
+  3.4) Vozaci prevoze radioaktivni otpad na unistavanje.
+
+Dodatne informacije:
+  Radnici su u obavezi da preuzmu Dokument o kretanju otpada od korisnika usluga
+  i dostave ga koordinatoru.

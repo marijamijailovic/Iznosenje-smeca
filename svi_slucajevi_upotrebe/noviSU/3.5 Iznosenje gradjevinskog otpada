@@ -1,0 +1,22 @@
+Naziv: Iznosenje gradjevinskog otpada
+
+Kratak opis:
+  Sluzba se bavi iznosenjem otpada sa gradilista
+  (sut, beton, daske, skele, sine, sipovi, pragovi i sl.).
+
+Preduslovi:
+  Otpad manje velicine se odlaze u kontejnere na gradilistima.
+  Otpad vece velicine se odlaze u stovariste na gradilistu.
+
+Postuslov:
+  Otpad je dostavljen na odgovarajucu lokaciju.
+
+Podtokovi:
+
+  3.1.1) Radnici kace kontejnere na kamion sa dizalicom.
+  3.1.2) Vozaci odvoze kontejnere na deponiju.
+  3.1.3) Radnici kace ispraznjen kontejner na kamion sa dizalicom.
+  3.1.4) Vozaci vracaju kontejnere na gradiliste.
+
+  3.2.1) Radnici odlazu otpad vece velicine u kamion.
+  3.2.2) Vozaci odvoze otpad na odredjenu lokaciju(gde se otpad topi ili preradjuje)

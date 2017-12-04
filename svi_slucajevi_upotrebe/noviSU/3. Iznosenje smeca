@@ -6,24 +6,27 @@ pojedinih slucajeva upotrebe i dodatno objasnjene stavke koje to zahtevaju.
 Akteri:
   1) Koordinator - predaje radni nalog radnicima,uz eventualna dodatna uputstva.
   2) Radnici - izlaze na teren sa odgovarajucom opremom.
+  3) Vozaci - osobe koja vrsi prevoz radnika i otpada.
 
 Preduslovi:
   1) Raspoloziva je odgovarajuca oprema(kamion,odela,alat).
   2) Radnici su obuceni za rad sa odgovarajucom opremom.
   3) Radnici vrse posao u skladu sa predvidjenim merama bezbednosti.
-  4) Radnici su dosli na tacnu lokaciju.
+  4) Vozaci su doveli radnike na tacnu lokaciju.
+  5) Vozaci su obuceni da voze sve vrste motornih vozila.
 
 Postuslov:
-  1) Otpad je odgovarajuce mesto(deponija,magacin,reciklazni centar,spaljivanje).
-  2) Koordinatora azurira stanje baze. Ukoliko je posao uspesno zavrsen, zabelezi to u bazi. Inace
-     sastavlja novi nalog, sa novim vremenom pocetka i kraja radova.
+  1) Otpad je dostavljen na odgovarajuce mesto(deponija,magacin,reciklazni centar,spaljivanje).
+  2) Koordinator azurira stanje baze. Ukoliko je posao uspesno zavrsen,
+     zabelezi to u bazu. Inace, sastavlja novi nalog,
+     sa novim vremenom pocetka i kraja radova.
 
 Osnovni tok:
   1) Radnici preuzimaju nalog od koordinatora
   2) Radnici dolaze na predvidjenu lokaciju
   3) Radnici izvrsavaju iznosenje
-  4) Radnici obavestavaju koordinatora(pozivom,SMS-om,email-om) o ishodu posla
-  5) Radnici se vracaju se kod koordinatora
+  4) Radnici obavestavaju koordinatora (pozivom, SMS-om, email-om) o ishodu posla
+  5) Vozaci i radnici se vracaju se kod koordinatora
 
 Alternativni tok:
   2) U slucaju nemogucnosti dolaska na lokaciju, radnici obavestavaju koordinatora i vracaju se u firmu.

@@ -3,7 +3,7 @@ Naziv: Iznosenje otpada za reciklazu
 Kratak opis:
     Sluzba se bavi odnosenjem reciklaznog otpada koji podrazumeva:
       - papir,
-      - plastika,
+      - plastiku,
       - staklo
 
 Preduslov:
@@ -11,9 +11,10 @@ Preduslov:
   Za svaki reciklazni otpad, postoji odgovarajuca vrsta kamiona.
 
 Postuslov:
-  1) Otpad je u centru za reciklazu.
+  1) Otpad je u Centru za reciklazu.
 
 Podtokovi:
   3.1) Radnici papirni otpad odlazu u kamion za papirni otpad.
   3.2) Radnici plasticni otpad odlazu u kamion za plasticni otpad.
   3.3) Radnici stakleni otpad smestaju u kamion za stakleni otpad.
+  3.4) Vozaci odvoze otpad u centar za reciklazu.

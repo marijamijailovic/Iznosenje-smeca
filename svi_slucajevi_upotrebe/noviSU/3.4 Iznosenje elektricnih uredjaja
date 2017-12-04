@@ -1,0 +1,12 @@
+Naziv: Iznosenje elektricnih uredjaja
+
+Kratak opis:
+  Sluzba se bavi odnosenjem i otkupljivanjem kucnih elektricnih uredjaja
+  (laptopovi, desktop racunari, televizori, telefoni, konzole za video igre, stampaci, skeneri).
+
+Postuslov:
+  Uredjaji su dostavljeni u magacin.
+
+Podtokovi:
+  3.1) Radnici pakuju uredaje u kombi/pikap.
+  3.2) Vozaci voze uredjaje u magacin.
