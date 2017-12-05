@@ -9,7 +9,7 @@ Postuslovi : Novi zaposleni je dodat u sistem.
 
 Osnovni tok :
 			1. Upravnik pristupa delu sistema za unos podataka o zaposlenima.
-			2. Upravnik bira vrstu zaposlenog (koordinator, magacioner, dispecer, vozac).
+			2. Upravnik bira vrstu zaposlenog (koordinator, magacioner, dispecer, radnik, vozac, menadzer prodaje).
 			3. Upravnik unosi sve potrebne informacije o zaposlenom.
 			4. Upravnik zavrsava unos klikom na opciju "dodaj".
 			5. Sistem obavestava upravnika o uspesnom dodavanju novog zaposlenog.
@@ -22,5 +22,5 @@ Alternativni tok:
 				- Slucaj upotrebe se nastavlja  od koraka 2.
 			
 Dodatne Informacije :
-			Nephodni uslovi za unos novog zaposlenog :id, ime, prezime, datum zaposljenja, vrsta posla koju obavlja, broj radnih dana,
+			Neophodni uslovi za unos novog zaposlenog :id(jmbg), ime, prezime, datum zaposljenja, vrsta posla koju obavlja, broj radnih dana,
 													  broj slobodnih dana, plata.

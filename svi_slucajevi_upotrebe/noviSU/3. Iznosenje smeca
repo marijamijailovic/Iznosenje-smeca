@@ -13,7 +13,7 @@ Preduslovi:
   2) Radnici su obuceni za rad sa odgovarajucom opremom.
   3) Radnici vrse posao u skladu sa predvidjenim merama bezbednosti.
   4) Vozaci su doveli radnike na tacnu lokaciju.
-  5) Vozaci su obuceni da voze sve vrste motornih vozila.
+  5) Vozaci imaju dozvolu za vozilo koje im je dato na upravljanje.
 
 Postuslov:
   1) Otpad je dostavljen na odgovarajuce mesto(deponija,magacin,reciklazni centar,spaljivanje).
@@ -26,7 +26,7 @@ Osnovni tok:
   2) Radnici dolaze na predvidjenu lokaciju
   3) Radnici izvrsavaju iznosenje
   4) Radnici obavestavaju koordinatora (pozivom, SMS-om, email-om) o ishodu posla
-  5) Vozaci i radnici se vracaju se kod koordinatora
+  5) Vozaci i radnici se vracaju kod koordinatora
 
 Alternativni tok:
   2) U slucaju nemogucnosti dolaska na lokaciju, radnici obavestavaju koordinatora i vracaju se u firmu.

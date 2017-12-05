@@ -4,16 +4,16 @@ Evidentiranje slobodnih dana
 Akteri: Upravnik
 
 Kratak opis:
-    Upravnik evidentira u sistemu slobodne dane radnika.
+    Upravnik pregleda zahteve radnika za slobodnim danima i procenjuje da li ce zahtev prihvatiti. 
 	
-Preduslovi: Radnik ima dovoljno slobodnih dana.
+Preduslovi: Zaposleni ima dovoljno slobodnih dana.
 
 Postuslovi: U sistemu je evidentiran zahtev radnika.
 
 Osnovni tok: 
-			1. Upravnik dobija zahteve radnika 
+			1. Upravnik dobija zahteve zaposlenog 
 			2. Upravnik pristupa delu sistema za pruzanje informacija o zaposlenima.
-			3. Upravnik razmatra zahteve radnika.
+			3. Upravnik razmatra zahteve zaposlenog.
 			4. Upravnik unosi u sistem potrebne informacije.
 			5. Sistem obavestava upravnika da je zahtev uspesno obradjen.
 			
@@ -24,4 +24,4 @@ Alternativni tok:
 				- Slucaj upotrebe se nastavlja od koraka 4.
 				
 Dodatne informacije: 
-	U zahtevu koji salje radnik se nalaze datum pocetka i datum kraja odmora.
+	U zahtevu koji salje radnik se nalaze datum pocetka i datum kraja odmora.Opciono, radnik moze u zahtevu napisati i razlog.

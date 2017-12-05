@@ -26,4 +26,4 @@ Alternativni tok :
 			- Obavestava se klijent i slucaj upotrebe se vraca na korak 2
 
 Dodatne informacije:
-	Formular sadrzi sledece informacije : ime, prezime, adresu, tip otpada, broj telefona, datum kada klijent zeli da se otpad iznese.
+	Formular sadrzi sledece informacije : ime, prezime, adresu, broj telefona, email, lokaciju otpada, kratak opis sta klijent tacno zahteva,vrstu otpada, datum kada zeli da se otpad iznese.

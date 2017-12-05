@@ -5,7 +5,7 @@ Kratak opis : Klijent kontaktira sluzbu putem telefona
 
 Akteri : Klijent i dispecer.
 
-Preduslovi : Klijent kontaktira sluzbu u toku  radnog vremena, dispecer je na svom radnom mestu,
+Preduslovi : Klijent kontaktira sluzbu u toku  radnog vremena, dispecer je na svom radnom mestu(u bazi ima status aktivan),
 			baza je ispravna.
 			
 Postuslovi :  dispecer je uspesno evidentirao zahtev klijenta u bazu podataka.
@@ -23,4 +23,4 @@ Alternativni tok :
 
 Dodatne informacije : 
 					Klijent prilikom kontaktira navodi sledece informacije : 
-					ime, prezime, adresu, tip otpada, broj telefona, datum kada zeli da se otpad iznese.
+					ime, prezime, adresu, broj telefona, email, lokaciju otpada, kratak opis sta klijent tacno zahteva,vrstu otpada, datum kada zeli da se otpad iznese.
