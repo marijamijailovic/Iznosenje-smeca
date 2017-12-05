@@ -6,14 +6,20 @@ Kratak opis:
       - plastiku,
       - staklo
 
-Preduslov:
+Akteri: Isti kao u opisu osnovnog slucaja (3. Iznosenje smeca).
+
+Preduslovi:
+  Isti kao u opisu osnovnog slucaja (3. Iznosenje smeca).
   Otpad je pravilno klasifikovan po odgovarajucim kontejnerima.
   Za svaki reciklazni otpad, postoji odgovarajuca vrsta kamiona.
 
-Postuslov:
-  1) Otpad je u Centru za reciklazu.
+Postuslovi:
+  Isti kao u opisu osnovnog slucaja (3. Iznosenje smeca).
+  Otpad je u Centru za reciklazu.
 
-Podtokovi:
+Osnovni tok:
+  Isti koraci kao u opisu osnovnog slucaja (3. Iznosenje smeca)
+  uz dodatnu specifikaciju treceg koraka.
   3.1) Radnici papirni otpad odlazu u kamion za papirni otpad.
   3.2) Radnici plasticni otpad odlazu u kamion za plasticni otpad.
   3.3) Radnici stakleni otpad smestaju u kamion za stakleni otpad.

@@ -4,9 +4,17 @@ Kratak opis:
   Sluzba se bavi odnosenjem i otkupljivanjem kucnih elektricnih uredjaja
   (laptopovi, desktop racunari, televizori, telefoni, konzole za video igre, stampaci, skeneri).
 
-Postuslov:
+Akteri: Isti kao u opisu osnovnog slucaja (3. Iznosenje smeca).
+
+Preduslovi:
+  Isti kao u opisu osnovnog slucaja (3. Iznosenje smeca).
+
+Postuslovi:
+  Isti kao u opisu osnovnog slucaja (3. Iznosenje smeca).
   Uredjaji su dostavljeni u magacin.
 
-Podtokovi:
+Osnovni tok:
+  Isti koraci kao u opisu osnovnog slucaja (3. Iznosenje smeca)
+  uz dodatnu specifikaciju treceg koraka.
   3.1) Radnici pakuju uredaje u kombi/pikap.
   3.2) Vozaci voze uredjaje u magacin.

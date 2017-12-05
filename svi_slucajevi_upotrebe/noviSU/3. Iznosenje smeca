@@ -1,5 +1,8 @@
-Iznosenje smeca je proces koji se u zavisnosti otpada razlicito realizuje.
-Navescemo stavke koje su zajednicke za sve slucajeve upotrebe.
+Opis osnovnog slucaja upotrebe iznosenja otpada
+===============================================
+
+Iznosenje otpada je proces koji se u zavisnosti od otpada razlicito realizuje.
+Navescemo elemente koje su zajednicki za sve slucajeve upotrebe.
 U slucajevima upotrebe na nizem nivou, bice razjasnjene specificnosti
 pojedinih slucajeva upotrebe i dodatno objasnjene stavke koje to zahtevaju.
 
@@ -15,18 +18,18 @@ Preduslovi:
   4) Vozaci su doveli radnike na tacnu lokaciju.
   5) Vozaci imaju dozvolu za vozilo koje im je dato na upravljanje.
 
-Postuslov:
+Postuslovi:
   1) Otpad je dostavljen na odgovarajuce mesto(deponija,magacin,reciklazni centar,spaljivanje).
   2) Koordinator azurira stanje baze. Ukoliko je posao uspesno zavrsen,
      zabelezi to u bazu. Inace, sastavlja novi nalog,
      sa novim vremenom pocetka i kraja radova.
 
 Osnovni tok:
-  1) Radnici preuzimaju nalog od koordinatora
-  2) Radnici dolaze na predvidjenu lokaciju
-  3) Radnici izvrsavaju iznosenje
-  4) Radnici obavestavaju koordinatora (pozivom, SMS-om, email-om) o ishodu posla
-  5) Vozaci i radnici se vracaju kod koordinatora
+  1) Radnici preuzimaju nalog od koordinatora.
+  2) Radnici dolaze na predvidjenu lokaciju.
+  3) Radnici izvrsavaju iznosenje.
+  4) Radnici obavestavaju koordinatora (pozivom, SMS-om, email-om) o ishodu posla.
+  5) Vozaci i radnici se vracaju kod koordinatora.
 
 Alternativni tok:
   2) U slucaju nemogucnosti dolaska na lokaciju, radnici obavestavaju koordinatora i vracaju se u firmu.

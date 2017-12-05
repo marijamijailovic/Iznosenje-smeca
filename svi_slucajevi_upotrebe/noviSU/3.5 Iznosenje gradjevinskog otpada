@@ -4,14 +4,20 @@ Kratak opis:
   Sluzba se bavi iznosenjem otpada sa gradilista
   (sut, beton, daske, skele, sine, sipovi, pragovi i sl.).
 
+Akteri: Isti kao u opisu osnovnog slucaja (3. Iznosenje smeca).
+
 Preduslovi:
+  Isti kao u opisu osnovnog slucaja (3. Iznosenje smeca).
   Otpad manje velicine se odlaze u kontejnere na gradilistima.
   Otpad vece velicine se odlaze u stovariste na gradilistu.
 
-Postuslov:
+Postuslovi:
+  Isti kao u opisu osnovnog slucaja (3. Iznosenje smeca).
   Otpad je dostavljen na odgovarajucu lokaciju.
 
-Podtokovi:
+Osnovni tok:
+  Isti koraci kao u opisu osnovnog slucaja (3. Iznosenje smeca)
+  uz dodatnu specifikaciju treceg koraka.
 
   3.1.1) Radnici kace kontejnere na kamion sa dizalicom.
   3.1.2) Vozaci odvoze kontejnere na deponiju.
@@ -19,4 +25,4 @@ Podtokovi:
   3.1.4) Vozaci vracaju kontejnere na gradiliste.
 
   3.2.1) Radnici odlazu otpad vece velicine u kamion.
-  3.2.2) Vozaci odvoze otpad na odredjenu lokaciju(gde se otpad topi ili preradjuje)
+  3.2.2) Vozaci odvoze otpad na odredjenu lokaciju (gde se otpad topi ili preradjuje).

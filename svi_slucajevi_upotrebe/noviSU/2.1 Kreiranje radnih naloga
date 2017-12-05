@@ -1,0 +1,18 @@
+Naziv: Kreiranje radnih naloga
+
+Kratak opis: Koordinator na osnovu raspolozivih radnika i vozila
+             kreira radne naloge
+
+Akter: Koordinator
+
+Preduslovi:
+    Zahtev je ispravno definisan i evidentiran je u bazi.
+    Radnici i vozila su rasolozivi.
+
+Postuslov:
+    Radni nalozi su kreirani i uneti u bazu.
+
+Osnovni tok:
+    1) Koordinator se konektuje na bazu.
+    2) Koordniator na osnovu raspolozivog stanja sastavlja radne naloge.
+    3) Koordinator stampa radne naloge.

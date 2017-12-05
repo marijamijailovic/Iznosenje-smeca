@@ -1,13 +1,18 @@
 Naziv: Evidencija poslova
-Akteri: Koordinator 
+
+Akteri: Koordinator
+
 Kratak opis:
-    Koordinator evidentira u bazi koji su radnici zauzeti trenutno poslom
+    Koordinator evidentira u bazi koji su radnici  trenutno zauzeti poslom
     i po zavrsetku posla ih oslobadja. Takodje evidentira u bazi uspesnost poslova.
+
 Preduslovi: /
-Postuslovi: Azurirana je baza
-Osnovni tok: 1. Koordinator evidentira u bazi zauzetost radnike
+
+Postuslov: Azurirana je baza
+
+Osnovni tok: 1. Koordinator evidentira u bazi zauzetost radnika
              2. Koordinator evidenitra u bazi uspesnost poslova
-Podtokovi:Nema.
-            
+
+Podtokovi: Nema.
 
 Alternativni tok: Nema.

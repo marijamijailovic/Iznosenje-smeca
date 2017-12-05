@@ -1,5 +1,4 @@
-
-Popunjavanje online formulara
+Naziv: Definisanje zahteva online
 
 Kratak opis:
 	Klijent kontaktira sluzbu tako sto popunjava online formular.
@@ -20,8 +19,7 @@ Osnovni tok :
 	5. Dispecer upisuje podatke iz formulara u sistem.
 	6. Sistem obavestava klijenta da je njegov zahtev uspesno primljen.
 
-
-Alternativni tok :
+Alternativni tok:
 	3. Posao je nemoguce izvrsiti tog datuma kada je klijent zahtevao :
 			- Obavestava se klijent i slucaj upotrebe se vraca na korak 2
 

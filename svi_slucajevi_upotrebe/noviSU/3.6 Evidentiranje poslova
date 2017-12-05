@@ -1,0 +1,29 @@
+Naziv: Evidentiranje poslova
+
+Kratak opis: Koordinator odrzava konzistentno stanje baze.
+    Vodi evidenciju o uspeno i neuspesno zavrsenim poslovima.
+
+Akteri:
+  Koordinator
+  Dispecer
+
+Preduslovi:
+    Koordinator je na svom radnom mestu.
+    Koordinator je obavesten od strane radnika o ishodu posla.
+
+Postuslovi:
+    Baza je azurirana. Klijent moze videti stanje svog zahteva.
+
+Osnovni tok:
+    1) Koordinator se konektuje na bazu.
+    2) Koordinator oslobadja angazovane radnike.
+    3) Koordinator cekira u bazi da je posao zavrsen.
+    4) Koordinator azurira bazu.
+    5) Sistem obavestava dispecera da je baza azurirana.
+    6) Dispecer popunjava polje "Odgovor dispecera" gde ce navesti sta se desava sa zahtevom
+
+Alternativni tok:
+    3.1) Ukoliko posao nije zavrsen uspesno,
+         koordinator popunjava polje "Odgovor koordinatora" tako sto navodi razlog neuspesnog izvrsavanja posla
+    3.2) Koordinator pravi novi radni nalog.
+    Slucaj upotrebe se nastavlja od koraka 4).

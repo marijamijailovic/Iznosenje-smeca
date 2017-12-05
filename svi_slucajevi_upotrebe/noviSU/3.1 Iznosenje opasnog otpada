@@ -13,18 +13,24 @@ Kratak opis:
       - Igle i oštri metalni predmeti;
       - Plastika)
 
+Akteri: Isti kao u opisu osnovnog slucaja (3. Iznosenje smeca).
+
 Preduslovi:
+  Isti kao u opisu osnovnog slucaja (3. Iznosenje smeca).
   Medicinski otpad je prilikom nastanka odlozen u kese i kante obojene zutom bojom.
   Hemijski otpad je prilikom nastanka odlozen u kese i kante obojene crvenom bojom.
   Radioaktivni otpad je upakovan u burad, kapsule ili providne kese.
   Predmeti u kojima se prenosi su oznaceni znakom Radioaktivni otpadni materijal.
   Korisnik usluga poseduje Dokument o kretanju otpada.
 
-Postuslov:
+Postuslovi:
+  Isti kao u opisu osnovnog slucaja (3. Iznosenje smeca).
   Otpad je dostavljen na odgovarajucu lokaciju.
   Koordinatoru je dostavljen Dokument o kretanju otpada.
 
-Podtokovi:
+Osnovni tok:
+  Isti koraci kao u opisu osnovnog slucaja (3. Iznosenje smeca)
+  uz dodatnu specifikaciju treceg koraka.
   3.1) Radnici odlazu radioaktivni otpad u kamion za tu vrstu otpada.
   3.2) Radnici odlazu hemijski i medicinski otpad u kombi.
   3.3) Vozaci prevoze hemijski i medicinski otpad na deponiju (gde se kasnije sortira i preradjuje).

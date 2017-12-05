@@ -1,4 +1,3 @@
-
 Zaposljavanje radnika
 
 Akteri : Upravnik
@@ -13,14 +12,14 @@ Osnovni tok :
 			3. Upravnik unosi sve potrebne informacije o zaposlenom.
 			4. Upravnik zavrsava unos klikom na opciju "dodaj".
 			5. Sistem obavestava upravnika o uspesnom dodavanju novog zaposlenog.
-			
+
 Alternativni tok:
 			3. Upravnik je uvideo nepravilnosti u prikupljenim podacima.
-				- Upravnik kontakrira zaposlenog kako bi dobio ispravne podatke. 
+				- Upravnik kontakrira zaposlenog kako bi dobio ispravne podatke.
 				- Slucaj upotrebe se nastavlja od koraka 2.
-			5. Sistem obavestava upravnika  da radnik nije uspesno dodat 
+			5. Sistem obavestava upravnika  da radnik nije uspesno dodat
 				- Slucaj upotrebe se nastavlja  od koraka 2.
-			
+
 Dodatne Informacije :
 			Neophodni uslovi za unos novog zaposlenog :id(jmbg), ime, prezime, datum zaposljenja, vrsta posla koju obavlja, broj radnih dana,
 													  broj slobodnih dana, plata.
