@@ -1,0 +1,37 @@
+Uvod:
+
+    Rad predstavlja predlog informacionog sistema za sluzbu iznosenja smeca. Rad je radjen kao projekat iz predmeta "Informacioni sistemi" na Matematickom fakultetu. Informacioni sistem bi trebao da zadovolji sve glavne potrebe i resi probleme danasnjih sluzbi iznosenja smeca. Pruzanje relevantnih informacija o postojecim sistemima u sluzbi iznosenja smeca nam je pruzio M.A., sef sluzbe iznosenja smeca u  JKP-u "Cistoca" iz Smedereva.
+    
+    Kratak opis sistema:
+    
+    Da bismo lakse opisali sistem prvo cemo navesti principe po kojima funkcionise sluzba za iznosenje smeca. Osnovni cilj je iznosenje otpada sa raznih lokacija i njihovo pravilno odlaganje ili skladistenje na za tu vrstu otpada predvidjen nacin.
+    Klijenti mogu slati zahteve za iznosenjem otpada. Sluzba je duzna da procesuira zahtev i pokusa da na sto efikasniji nacin 
+    obavi klijentove zahteve. Sluzba se susrece sa raznim poteskocama kao sto su ogranicen broj radne snage i sredstava potrebnih za obavljanje posla. Sluzba iznosi razlicite vrste otpada kao sto su reciklazni, kabasti, elektricni, hemijski..itd.
+    Za svaku vrstu otpada postoji posebna procedura koja se mora ispostovati, od specijalne opreme za tu vrstu otpada preko nacina na koji se prevozi do krajnje lokacije gde se otpad odlaze/skladisti(razne vrste deponija, magacini...).
+
+    Sistem pruza podrsku zaposlenima da lakse, brze i efikasnije obavljaju svoje poslove. Takodje sistem olaksava i komunikaciju sa klijentima (preko online formulara ili telefonskog poziva). U sluzbi je svako odgovoran za svoj deo posla, nema preklapanja. Sistem ce pruziti svakom zaposlenom samo skup funkcionalnosti koje su predvidjene za njegovu radnu poziciju. U bazi se cuvaju podaci o svim zaposlenima i njihovim obavljenim poslovima.
+    
+    Akteri:
+    
+    Upravnik - rukovodi poslovanjem sluzbe. Upravniku sistem nudi uvid u rad zaposlenih u firmi. Pruza mu mogucnost da smenjuje radnike, zaposljava, daje otkaze, dopusta odmore...
+    
+    Dispecer - zaduzen je za komunikaciju sa klijentom. Prihvata zahteve klijenata i prosledjuje poslove koordinatorima. Zahtevi klijenata se prikupljaju i cuvaju u sistemu dok ih dispecer ne obradi.
+    
+    Klijent - salje zahteve za obavljanjem posla. Sistem mu omogucava da preko online formulara posalje zahtev. Takodje klijent moze i direktno kontaktirati dispecera preko telefona pri cemu zajedno definisu zahtev.
+    
+    Koordinator- vrsi ulogu operativca. Njegov glavni zadatak je da organizuje poslove iznosenja otpada. Koordinator ima mogucnosti da izabere slobodne radnike, vozace, vozila i ostala sredstva koja su mu na raspolaganju da obavi posao. Duznost koordinatira da li je posao zavrsen do kraja i ako nije da navede razlog. Ovaj razlog moze da vidi dispecer pri cemu treba da obavesti klijenta ako njegov zahtev nije ispunjen.
+    
+    Radnik - radnik ima zadatak da radi po nalogu. Njegova obaveza je da izvrsi zadatak i obavesti koordinatora da je posao uradjen i ako nije, da slusa dalja uputstva koordinatora.
+    
+    Vozac - vozac po nalogu dobija posao, tacnu rutu na koju mora da ode. Vozac je rasporedjen na neko vozilo i na njemu obavlja svoj deo posla.
+    
+    Menadzer prodaje -  njegov zadatak je da izlazi na teren i procenjuje otpad koji se moze otkupiti i preprodati/reciklirati
+    Njega angazuje dispecer. Duznost menadzera je da odgovori na zahtev klijenta da li je zahtev prihvacen kao i cenu otpada ako je odgovor potvrdan
+    
+    
+    
+    Analiza sistema:
+    
+    Analizirali smo postojeci sistem JKP "Cistoca". Trenutni sistem funkcionise jako lose. Sistem je zastareo i ne koristi u potpunosti predosti koje nam nude informacione tehnologije. Vecina informacija i podataka nalaze se na papirima. Poslovi su vrlo neprecizno raspodeljeni medju zaposlenima. Na primer, u trenutnom sistemu nije jasno definisano ko je zaduzen za saradnju sa klijentima, pa se desava da klijenti pozivaju operativce da im rese konkretan problem. Operativci (koordinatori) u tom slucaju budu prebukirani i ne mogu da vrse posao efikasno. Takodje, efikasnost je smanjena samim tim sto se podaci o zaposlenima i druge cesto koriscene informacije cuvaju u vidu Excel tabela. Samim tim menjanje podataka je vrlo sporo i nebezbedno. Ne postoji nikakav interfejs preko koga bi se moglo lakse, brze i bezbednije menjati podaci. Dobra stvar u trenutnom sistemu je podsistem koji prati vozila na terenu. Sistem je nov, pouzdan i zaista mnogo doprinosi koordinatorima da  vrlo lako procenjuju vreme trajanja nekog posla, kasnjenje, radnu snagu potrebnu za neki posao... U svakom trenutku koordinator moze da proveri geografski u kom delu grada se nalaze ljudi koji iznose otpad, koliko su se dugo zadrzali...
+    
+    Novi sistem bi trebao da omoguci pre svega bolju komunikaciju izmedju zaposlenih, kao i laksu evidenciju poslova, zadataka, zahteva... Sistem ce koristiti informacione tehnologije (veb pretezno) da omoguci brzi i laksi protok informacija. Podaci o zaposlenima, o trenutnim, zavrsenim i buducim poslovima, zahtevi klijenata, stanja vozila.. itd. ce se nalaziti u bazi, a sistem bi trebao da priusti brz i lak pristup podacima preko korisnickih intefejsa. Takodje novim sistemom bi bila jasna podela zaduzenja u sluzbi. Odnosi sa klijentima se jasno dekomponuju od samog procesa iznosenja otpada.
