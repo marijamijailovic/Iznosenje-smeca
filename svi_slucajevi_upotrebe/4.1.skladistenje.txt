@@ -1,0 +1,25 @@
+
+Skladistenje 
+
+
+Akteri : Magacioner
+
+Preduslovi : Artikli koji se skladiste su uspesno dostavljeni do magacina.
+
+Postuslovi : U magacinu se nalaze dostavljeni artikli i u sistemu su isti evidentirani.
+
+Osnovni tok : 
+			1. Magacioner prihvata istovarene artikle.
+			2. Magacioner svrstava svaki artikal na odgovorajuce mesto u magacinu.
+			3. Magacioner pristupa delu informacionog sistema zaduzenog za artikle.
+			4. Magacioner upisuje u sistem informacije o svakom artiklu.
+			5. Sistem obavestava magacionera o uspesnom dodavanju artikla.
+			
+Alternativni tok :
+			5. Sistem obavestava magacionera da zahtev nije uspesno obradjen.
+				- Slucaj upotrebe se nastavlja od koraka 4.
+				
+				
+Dodatne informacije : 
+			U sistem se upisuje ime artikla, id artikla i kolicina ( usaglasite ovo sa anticevim pokusajem baze)
+				

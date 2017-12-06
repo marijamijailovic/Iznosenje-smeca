@@ -1,0 +1,21 @@
+Naziv: Aukcija
+
+Kratak opis: Artikli koji se nalaze u bazi ce se prodavati na aukciji.
+
+Akteri: Menadzer prodaje - rukovodi aukcijom.
+        Klijenti - kupuje artikal na aukciji.
+
+Preduslovi:
+    Artikli se nalaze u bazi.
+    Formirana je pocetna cena svakog artikla.
+
+Postuslovi:
+    Ukoliko je artikal prodat, obrisan je iz baze.
+
+Osnovni tok:
+    1) Menadzer prodaje odredjuje vreme zavrsetka aukcije.
+    2) Klijenti ucestvuju u aukciji.
+    3) Sistem objavljuje klijenta sa najvecom ponudom koji kupuje proizvod.
+
+Alternativni tok:
+    3) Ako nema nijedne ponude, slucaj upotrebe se nastavlja od koraka 1).

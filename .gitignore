@@ -1,0 +1,9 @@
+##latex files:
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+##workbench files:
+*.bak
