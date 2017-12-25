@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Služba za iznošenje smeća</title>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script type="text/javascript" src="script.js"></script>
+
+
+</head>
+
+<body>
+	<div class="jumbotron">
+	</div>
+
+	<form class="container" id="needs-validation" novalidate>
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="name">Ime</label>
+				<input type="text" class="form-control" id="name" required>
+				<div class="invalid-feedback">
+        	Molimo unesite ispravno ime
+      	</div>
+			</div>
+			<div class="form-group col-md-6">
+				<label for="lastName">Prezime</label>
+				<input type="text" class="form-control" id="lastName" required>
+				<div class="invalid-feedback">
+        	Molimo unesite ispravno prezime
+      	</div>
+			</div>
+
+			<div class="form-group col-md-6">
+				<label for="phone">Telefon</label>
+				<input type="text" class="form-control" id="phone" required>
+				<div class="invalid-feedback">
+        	Molimo unesite ispravan broj telefona
+      	</div>
+			</div>
+			<div class="form-group col-md-6">
+				<label for="email">Email address</label>
+				<input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+				<div class="invalid-feedback">
+        	Molimo unesite ispravnu email adresu
+      	</div>
+			</div>
+			<div class="form-group col-md-6">
+				<label for="location">Lokacija otpada</label>
+				<input type="text" class="form-control" id="location" required>
+				<div class="invalid-feedback">
+        	Molimo unesite ispravnu lokaciju otpada
+      	</div>
+			</div>
+			<div class="form-group col-md-6">
+		    <label for="garbageType">Vrsta otpada</label>
+		    <select class="form-control" id="garbageType">
+		      <option>Opasan otpad</option>
+		      <option>Reciklažni otpad</option>
+		      <option>Kabasti otpad</option>
+		      <option>Električni otpad</option>
+		      <option>Građevinski otpad</option>
+		    </select>
+			</div>
+  	</div>
+
+		<div class="form-group">
+			<textarea class="form-control" placeholder="Opišite nam ukratko kakvu vrstu otpada posedujete i šta konkretno zahtevate" required></textarea>
+		</div>
+
+		<button type="submit" class="btn btn-primary">Pošalji</button>
+	</form>
+
+</body>
+
+</html>
