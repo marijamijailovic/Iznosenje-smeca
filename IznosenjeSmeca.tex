@@ -168,10 +168,9 @@
 			\item\textit{Osnovni tok} 
 				\begin{enumerate}
 					\item Klijent pristupa sajtu sluzhbe.
-
 					\item Klijent popunjava formular.
-
 					\item Klijent potvrdjuje zheljenu uslugu klikom na "poshalji".
+					\item Sistem pamti zahtev klijenta.
 				\end{enumerate}
 			
 			\item\textit{Dodatne informacije}
@@ -200,15 +199,14 @@
 				\begin{enumerate}
 					\item Dispecher pristupa delu informacionog sistema za proveru novih zahteva.
 					\item Dispecher proverava pristigli zahtev.
-					\item Dispecher upisuje podatke iz formulara u sistem.
+						\begin{enumerate}
+							\item[2.1] U sluchaju da se pristigli zahtev tiche iznoshenja elektrichnog otpada.
+							\item[2.2] Sistem obaveshtava klijenta da c1e biti kontaktiran od strane menad2era prodaje.
+						\end{enumerate}
+					\item Dispecher belezhi zahtev u sistem.
 					\item Sistem obaveshtava klijenta da je njegov zahtev uspeshno primljen.
 				\end{enumerate}
-			
-			\item\textit{Podtok}
-				\begin{enumerate}
-					\item [4.] U sluchaju da se pristigli zahtev tiche iznoshenja elektrichnog otpada. Sistem obaveshtava klijenta da c1e biti kontaktiran od strane menad2era prodaje.
-				\end{enumerate}
-			
+	
 			\item\textit{Alternativni tok}
 				\begin{enumerate}
 					\item [2.] Posao je nemoguc1e izvrshiti tog datuma kada je klijent zahtevao. - Obaveshtava se klijent i sluchaj upotrebe se ovde zavrshava.
@@ -245,18 +243,13 @@
 
 				\begin{enumerate}
 					\item Klijent poziva sluzhbu.
-
 					\item Klijent dispecheru saopshtava sve potrebne informacije u vezi sa zahtevom.
-
-					\item Dispecher potvrdjuje zahtev.
-
+						\begin{enumerate}
+							\item[2.1] U sluchaju da se pristigli zahtev tiche iznoshenja elektrichnog otpada.
+							\item[2.2] Dispecher obaveshtava klijenta da c1e biti kontaktiran od strane menad2era prodaje.
+						\end{enumerate}
 					\item Dispecher upisuje podatke u sistem.
-
-				\end{enumerate}
-			
-			\item\textit{Podtok}
-				\begin{enumerate}
-					\item [3.] U sluchaju da je zahtev klijenta za iznoshenje elektrichnog otpada. Dispecher obaveshtava klijenta da c1e biti kontaktiran od strane menad2era prodaje.
+					\item Dispecher potvrdjuje zahtev.
 				\end{enumerate}
 			
 			\item\textit{Alternativni tok}
@@ -309,7 +302,7 @@ ime, prezime, adresu, broj telefona, imejl, lokaciju otpada, kratak opis shta kl
 					\item Dispecher obaveshtava menad2era prodaje da je stigao zahtev za iznoshenje elektrichnog otpada.
 					\item Menad2er prodaje izlazi na teren radi procene.
 					\item Menad2er prodaje vrshi procenu.
-					\item Menad2er prodaje dopunjuje zahtev korisnika tako shto dodaje cenu usluge.
+					\item Menad2er prodaje dopunjuje zahtev korisnika tako shto dodaje procenjenu vrednost uredjaja.
 				\end{enumerate}
 			
 			\item\textit{Alternativni tok}
@@ -338,7 +331,7 @@ ime, prezime, adresu, broj telefona, imejl, lokaciju otpada, kratak opis shta kl
 			
 			\item\textit{Osnovni tok}
 				\begin{enumerate}
-					\item Koordinator se konektuje na bazu.
+					\item Koordinator pristupa delu informacionog sistema za kreiranje radnih naloga.
 					\item Koordniator na osnovu raspolozhivog stanja sastavlja radne naloge.
 					\item Koordinator shtampa radne naloge.
 				\end{enumerate}
@@ -846,7 +839,7 @@ ime, prezime, adresu, broj telefona, imejl, lokaciju otpada, kratak opis shta kl
 		
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=15cm,height=15cm,keepaspectratio]{slike/baza.png}\\
+			\includegraphics[width=15cm,height=20cm,keepaspectratio]{slike/baza.png}\\
 			\caption{Baza podataka}
 			\label{fig:BazaPodataka}
 		\end{figure}
@@ -854,7 +847,20 @@ ime, prezime, adresu, broj telefona, imejl, lokaciju otpada, kratak opis shta kl
 	%------------------------------------------------------
 	
 	\section{Arhitektura}
-	
+		
+		Karakteristike arhitekture:
+		\begin{enumerate}
+			\item\textit{Tip aplikacije} - Veb aplikacija.
+			\item\textit{Strategija isporuchivanja} - Vishe klijent{s}kih i jedan serverski rachunar.
+			\item\textit{Tehnologije} - HTML5, CSS, JS, PHP.
+			\item\textit{Pratec1e komponente:}
+				\begin{enumerate}
+					\item Uputstvo za upotrebu, kontakt i podrshku.
+					\item Bekap baze podataka - podsistem koji vrshi pravljenje kopije baze podataka.
+				\end{enumerate}
+		\end{enumerate}
+		
+		
 		Predlog arhitekture dat je na slici \ref{fig:Arhitektura}
 		
 		\begin{figure}[H]
@@ -863,14 +869,30 @@ ime, prezime, adresu, broj telefona, imejl, lokaciju otpada, kratak opis shta kl
 			\caption{Predlog arhitekture}
 			\label{fig:Arhitektura}
 		\end{figure}
+		
+			
+		Arhitektura sistema se sastoji se iz 4 sloja:
+			\begin{itemize}
+				\item Prezentacioni sloj.
+				\item Klijent kontroler.
+				\item Server kontroler.
+				\item Sloj podataka.
+			\end{itemize}	
+
+		\begin{enumerate}
+			\item Definisanje zahteva putem formulara - na prezentacionom sloju klijent popunjava i shalje formular. Nakon chega se kroz klijentski sloj vrshi validacija i autentifikacija unetih podataka, a serverski kontroler vrshi proveru dostupnosti termina za isnoshenje otpada i zahtev se belezhi u bazi. Nakon chega se shalje potvrda klijentu da je njegov zahtev uspeshno zabelezhen.
+			
+			\item Aukcija - korisnik na prezentacionom sloju bira proizvod sa aukcije i daje svoju ponudu. Dalje se kroz klijent kontroler vrshi validacija i autentifikacija unetih podataka. Nakon chega serverski kontroler vrshi proveru da li je ponuda vec1a od tekuc1e i da li je podneta na vreme. Nakon toga se vrshi evidencija u bazi i korisnik se obaveshtava da je njegova ponuda uspeshno zabelezhena.
+			
+			\item Radni nalozi - koordinator na prezentacionom sloju unosi broj potrebne radne snage za izvrshavanje odgovarajuc1eg zahteva. Nakon chega se kroz klijent{s}ki kontroler vrshi validacija i autentifikacija unetih podataka. Dalje serverski kontroler vrshi evidenciju radne snage i vozila. Na kraju, se azhurira baza podataka, sa novim stanjem raspolozhive radne snage i vozila.
+			
+			\item Zahtev zaposlenog za odmor - zaposleni na prezentacionom sloju popunjava formular sa zheljenim datumom pochetka i kraja odmora. Klijent kontroler vrshi validaciju i autentifikaciju unetih podataka. Nakon toga se vrshi provera raspolozhivih slobodnih dana, oduzimanje slobodnih dana i evidencija da je radnik na odmmoru od strane server konrolera. Nakon chega se azhuriraju podaci u bazi o slobodni dani i odsustvo zaposlenog.
+			
+		\end{enumerate}
 	
-		\begin{itemize}
-			\item Definisanje zahteva putem formulara - popunjavanje formulara od strane klijenta i slanje zahteva, koji se kasnije kroz klijent{s}ki i serverski kontroler proverava i unosi u bazu. Nakon chega se shalje potvrda klijentu da je njegov zahtev uspeshno zabelezhen.
-			\item Vozila i radnici - koordinator unosi broj potrebne radne snage za izvrshavanje odgovarajuc1eg zahteva. Nakon chega se kroz klijent{s}ki i serverski kontroler vrshi provera i evidencija radne snage i vozila. Na kraju, se azhurira baza podataka, sa novim stanjem raspolozhive radne snage i vozila.
-			\item Zahtev zaposlenog za odmor - zaposleni popunjava formular sa zheljenim datumom pochetka i kraja odmora. Nakon toga se vrshi provera raspolozhivih slobodnih dana. Nakon chega se azhuriraju slobodni dani i odsustvo zaposlenog.
-			\item Aukcija - korisnik bira proizvod sa aukcije i daje svoju ponudu. Dalje se proverava da li je ponuda vec1a od tekuc1e i da li je podneta na vreme. Nakon toga se vrshi evidencija u bazi.
-		\end{itemize}
+		%------------------------------------------------------
 	
+	\section{Korisnichki interfejs}
 	
 	
 \end{document} 
