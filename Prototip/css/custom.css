@@ -61,19 +61,23 @@ hr{
     border-radius: 0;
     font-family: Montserrat, sans-serif;
 }
+
 .navbar li a, .navbar .navbar-brand {
     color: #fff !important;
 }
+
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #f4511e !important;
     background-color: #fff !important;
 }
+
 .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
 }
 
 .slideanim {visibility:hidden;}
+
 .slide {
     animation-name: slide;
     -webkit-animation-name: slide;
@@ -81,6 +85,11 @@ hr{
     -webkit-animation-duration: 1s;
     visibility: visible;
 }
+
+tbody:hover{
+  cursor: pointer;
+}
+
 @keyframes slide {
   0% {
     opacity: 0;
@@ -91,6 +100,7 @@ hr{
     transform: translateY(0%);
   }
 }
+
 @-webkit-keyframes slide {
   0% {
     opacity: 0;

@@ -53,34 +53,19 @@
   <form class="container" id="request" action="clientRequest.php" method="get">
 	   <div class="form-group">
 	      <label for="name">Ime</label>
-  			<input type="text" class="form-control" id="name" name="ime" required>
-  			<div class="invalid-feedback">
-  				Molimo unesite ispravno ime
-  			</div>
+  			<input type="text" class="form-control" id="name" name="ime" placeholder="Pera" required>
 
   			<label for="lastName">Prezime</label>
-  			<input type="text" class="form-control" id="lastName" name="prezime" required>
-  			<div class="invalid-feedback">
-  				Molimo unesite ispravno prezime
-  			</div>
+  			<input type="text" class="form-control" id="lastName" name="prezime" placeholder="Peric" required>
 
   			<label for="phone">Telefon</label>
-  			<input type="text" class="form-control" id="phone" name="telefon" required>
-  			<div class="invalid-feedback">
-  				Molimo unesite ispravan broj telefona
-  			</div>
+  			<input type="text" class="form-control" id="phone" name="telefon" placeholder="064123456" required>
 
   			<label for="email">Email address</label>
-  			<input type="email" class="form-control" id="email" placeholder="name@example.com" name="mejl" required>
-  			<div class="invalid-feedback">
-  				Molimo unesite ispravnu email adresu
-  			</div>
+  			<input type="email" class="form-control" id="email" name="mejl" placeholder="name@example.com" required>
 
   			<label for="location">Lokacija otpada</label>
-  			<input type="text" class="form-control" id="location" name="lokacija" required>
-  			<div class="invalid-feedback">
-  				Molimo unesite ispravnu lokaciju otpada
-  			</div>
+  			<input type="text" class="form-control" id="location" name="lokacija" placeholder="Mokroluška 25, Beograd (Voždovac)" required>
 
   			<label for="garbageType">Vrsta otpada</label>
   			<select class="form-control" id="garbageType" name = "vrsta">
@@ -91,44 +76,52 @@
   				<option value = "4">Građevinski otpad</option>
   			</select>
 
-  			<label for="date">Rok za iznošenje otpad</label>
+  			<label for="date">Rok za iznošenje otpada</label>
   			<input type="date" class="form-control" id="date" name="datum" required>
-  			<div class="invalid-feedback">
-  				Molimo unesite ispravan datum
-  			</div>
 
   			<label for="describe">Opis</label>
   			<textarea class="form-control" name="opis" id="describe" placeholder="Opišite nam ukratko kakvu vrstu otpada posedujete i šta konkretno zahtevate" required></textarea>
-  			<div class="invalid-feedback">
-  				Molimo unesite kratak opis
-  			</div>
-   </div>
+     </div>
 
-	<button type="submit" class="btn btn-danger">Pošalji zahtev</button>
+    <button type="submit" class="btn btn-danger">Pošalji zahtev</button>
 	</form>
 
 	<hr />
 
   <!-- Forma za slanje ponude za proizvod na aukciji -->
-  <!-- TODO promeniti da ne bude select lista, vec neka tabela -->
 
 	<h2 class="text-center"> Proizvodi na aukciji </h2> <br />
 
 	<form class="container" id="auction" action="sendBind.php" method="get">
 		<div class="form-group">
-      <label for="list">Uredjaji na aukciji</label>
-  		<select class="form-control" id="list" name="lista"></select>
+
+      <table class="table table-hover table-sm table-bordered">
+        <thead>
+          <tr>
+            <th>Red.Br.</th>
+            <th>Ime artikla</th>
+            <th>Opis</th>
+            <th>Minimalna cena</th>
+            <th>Aukcijska cena</th>
+          </tr>
+        </thead>
+        <tbody  id="tabela">
+        </tbody>
+      </table>
+
+      <!-- Ovde se cuva idArtikla -->
+      <input type="hidden" name="redniBrUredjaja" id="articalNumber">
+
+      <!--<label for="list">Uredjaji na aukciji</label>
+  		<select class="form-control" id="list" name="lista"></select>-->
 
 			<label for="price">Ponuda</label>
-			<input type="number" class="form-control" id="price" name="ponuda" min=1 required>
-			<div class="invalid-feedback">
-				Molimo unesite ispravno ime
-			</div>
-		</div>
+			<input type="number" class="form-control" id="price" name="ponuda" min=1 placeholder="25000" required>
+
+    </div>
 
     <button type="submit" class="btn btn-danger">Pošalji ponudu</button>
-
-  </from>
+  </form>
 
   <!-- Kontak polje -->
   <hr />
@@ -161,10 +154,16 @@
               var minCena=podaci.minCena;
               var aukcijskaCena=podaci.aukcijskaCena;
 
-              //TODO zamnei da bude tabela neka
-							var stavka="<option value='"+idArtikal+"'>"+ ime +" " + opis + " min cena: " + minCena + " aukcijska cena: " + aukcijskaCena + " </option>";
+							//var stavka="<option value='"+idArtikal+"'>"+ ime +" " + opis + " min cena: " + minCena + " aukcijska cena: " + aukcijskaCena + " </option>";
 
-							$("#list").append(stavka);
+              var stavka="<tr><td>"+ idArtikal + " </td><td> " + ime +" </td><td> " + opis + " </td><td> " + minCena + " </td><td> " + aukcijskaCena + " </td></tr>";
+
+              $("#tabela").append(stavka);
+              $("#tabela tr").click(function(){
+                 $(this).css('background-color','brown').siblings().css('background-color','white');
+                 var value=$(this).find('td:first').html();
+                 $("#articalNumber").val(value);
+              });
 						}
 					},
 					dataType: "json"

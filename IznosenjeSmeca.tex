@@ -890,9 +890,98 @@ ime, prezime, adresu, broj telefona, imejl, lokaciju otpada, kratak opis shta kl
 			
 		\end{enumerate}
 	
-		%------------------------------------------------------
-	
+	%------------------------------------------------------
+	\newpage
 	\section{Korisnichki interfejs}
+	
+	\subsection{Sajt korisnika usluga}
+	
+	Izgled sajta korisnika usluga dat je na slii \ref{fig:StranaKorisnika}
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=15cm,height=15cm,keepaspectratio]{GUI/stranaKorisnika.png}\\
+			\caption{Sajt korisnika usluga}
+			\label{fig:StranaKorisnika}
+		\end{figure}
+	
+	Nakon ulaska na sajt, korisnik ima neku od sledec1ih opcija:
+		\begin{enumerate}
+			\item \textbf{Popunjavanje zahteva za iznoshenjem otpada} - od korisnika se ochekuje da unese podatke i to: ime, prezime, telefon, imejl, lokaciju na kojoj se nalazi otpad, vrstu otpada koju poseduje(opasan otpad,otpad za reciklazhu,kabasti otpad,elektrichni otpad, gradjevinski otpad), krajnji datum kada zheli da se iznese otpad i opis shta tachno poseduje od otpada i kolichinu koju poseduje.
+			
+			Prikaz ovog formulara dat je na slici \ref{fig:zahtevFormular}
+			
+			\item\textbf{ Aukcija} - korisniku se pruzha spisak svih proizvoda, sa njhovim opisom i pochetnom aukcijskom cenom koji su trenutno na aukciji, i ukoliko zheli mozhe da poshalje svoju ponudu za neki od proizvoda.
+			
+			Prikaz aukcijske sekcije dat je na slici \ref{fig:aukcija}
+			
+			\item \textbf{Kontakt} - korisnik nas mozhe i pozvati i saopshtiti nam svoje zhelje i zahteve.
+			
+			Prikaz kontakt sekcije dat je na slici \ref{fig:kontakt}
+		\end{enumerate} 
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=15cm,height=15cm,keepaspectratio]{GUI/formularZaSlanjeZahteva.png}\\
+			\caption{Slanje zahteva za iznoshenje otpada}
+			\label{fig:zahtevFormular}
+		\end{figure}
+	
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=15cm,height=15cm,keepaspectratio]{GUI/Aukcija.png}\\
+			\caption{Aukcija}
+			\label{fig:aukcija}
+		\end{figure}
+	
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=15cm,height=15cm,keepaspectratio]{GUI/kontaktDeo.png}\\
+			\caption{Kontakt}
+			\label{fig:kontakt}
+		\end{figure}
+	
+	\newpage
+	\subsection{Sajt zaposlenih u firmi}
+	
+	Izgled sajta koji je namenjen zaposlenima u firmi dat je na slici \ref{fig:StranaZaposlenih}	
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=15cm,height=15cm,keepaspectratio]{GUI/stranaFirme.png}\\
+			\caption{Sajt namenjen zaposlenima u firmi}
+			\label{fig:StranaZaposlenih}
+		\end{figure}
+	
+	Zaposleni u firmu imaju vishe moguc1nosti, i svaki zaposlen u firmi ima odredjenu sekciju koja mu je namenjenja. Radi lakshe demontracije oba formulara su stavljena na istu stranu, gde smo pretpostavili da bi pri pristupanju sajtu postojlo logovanje na sistem, stoga bi se svakom zaposlenom prikazivali delovi strane koji ga se tichu. Za potrebe prototipa odluchili smo se da demonstritamo:
+		\begin{enumerate}
+			\item \textbf{Kreiranje radnih naloga} - gde koordinator bira jedan od zahteva, nakon toga bira broj potrebne radne snage i vrstu vozila koja je potreba za obavljanje izabranog zahteva.
+			
+			Prikaz kreiranja radnih naloga dat je na slici \ref{fig:radniNalog}
+			
+			\item \textbf{Slanje zahteva zaposlenog za odmor} - zaposleni unosi svoje podatke i to: ime, prezime, datum pochetka odmora, datum kraja odmora i ukoliko to zheli mozhe navesti i razlog odsustva.
+			
+			Prikaz ovog formulara dat je na slici \ref{fig:Odmor}
+		\end{enumerate}
+	
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=15cm,height=15cm,keepaspectratio]{GUI/formularRadniNalog.png}\\
+			\caption{Kreiranje radnog naloga}
+			\label{fig:radniNalog}
+		\end{figure}
+		
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=15cm,height=15cm,keepaspectratio]{GUI/formularZahtevZaOdmor.png}\\
+			\caption{Zahtev za odmor}
+			\label{fig:Odmor}
+		\end{figure}
+	
 	
 	
 \end{document} 

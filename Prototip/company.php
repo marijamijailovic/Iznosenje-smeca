@@ -12,39 +12,44 @@
 
 	<link rel="stylesheet" href="css/custom.css">
 
+
+		<script id="source" language="javascript" type="text/javascript">
+
+		  $(document).ready(function()
+		  {
+				$.ajax({
+						url: 'request.php',
+						method: 'GET',
+						success: function(rezultat){
+							var n=rezultat.length;
+
+							for(var i=0; i<n; i++){
+								var podaci=rezultat[i];
+								var idZahtev=podaci.idZahtev;
+						    var tekstZahteva=podaci.tekstZahteva;
+								var ocekivanDatumIznosenja=podaci.ocekivanDatum;
+						    var lokacijaOtpada=podaci.lokacijaOtpada;
+
+								//var stavka="<option value='"+idZahtev+"'>"+ tekstZahteva +" " + ocekivanDatumIznosenja + " " + lokacijaOtpada + " </option>";
+								var stavka="<tr><td>"+ idZahtev + " </td><td> " + tekstZahteva +" </td><td> " + ocekivanDatumIznosenja + " </td><td> " + lokacijaOtpada + " </td></tr>";
+
+								$("#tabela").append(stavka);
+								$("#tabela tr").click(function(){
+								   $(this).css('background-color','brown').siblings().css('background-color','white');
+   								 var value=$(this).find('td:first').html();
+									 $("#orderNumber").val(value);
+								});
+							}
+						},
+						dataType: "json"
+					});
+				});
+
+	  </script>
+
 </head>
 
 <body id="clientPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
-	<script id="source" language="javascript" type="text/javascript">
-
-	  $(document).ready(function()
-	  {
-			$.ajax({
-					url: 'request.php',
-					method: 'GET',
-					success: function(rezultat){
-						var n=rezultat.length;
-
-						for(var i=0; i<n; i++){
-							var podaci=rezultat[i];
-							var idZahtev=podaci.idZahtev;
-					    var tekstZahteva=podaci.tekstZahteva;
-							var ocekivanDatumIznosenja=podaci.ocekivanDatum;
-					    var lokacijaOtpada=podaci.lokacijaOtpada;
-
-							//TOD zameni ovo da bude neka lepo formatirana tabela
-							var stavka="<option value='"+idZahtev+"'>"+ tekstZahteva +" " + ocekivanDatumIznosenja + " " + lokacijaOtpada + " </option>";
-
-							$("#list").append(stavka);
-						}
-					},
-					dataType: "json"
-
-				});
-			});
-
-  </script>
 
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
@@ -69,21 +74,36 @@
 
 	<h2 class="text-center"> Kreiraj radni nalog: </h2><br/>
 
+
 	<form class="container" id="order" action="createOrdrer" method="get">
 		<div class="form-group">
-				<label for="list">Spisak zahteva</label>
-			  <select class="form-control" id='list' name="lista"></select>
+				<table class="table table-hover table-sm table-bordered">
+					<thead>
+						<tr>
+							<th>Red.Br.</th>
+							<th>Opis</th>
+							<th>Ocekivan datum iznosenja</th>
+							<th>Lokacija otpada</th>
+						</tr>
+					</thead>
+					<tbody  id="tabela">
+					</tbody>
+				</table>
+
+				<!-- Ovde se cuva idZahtev -->
+				<input type="hidden" name="redniBrZahteva" id="orderNumber">
+
+				<!--<label for="list">Spisak zahteva</label>
+			  <select class="form-control" id='list' name="lista"></select>-->
 
 				<label for="worker">Broj radnika</label>
-				<input type="number" class="form-control" id="worker" name="brRadnika" min="1" required>
+				<input type="number" class="form-control" id="worker" name="brRadnika" min="1" placeholder="5" required>
 				<div class="invalid-feedback">
         	Molimo unesite ispravan broj radnika
       	</div>
 
         <label>Tip kamiona:</label>
-				<!--
-					TODO zameni tako da se ovi tipovi izlistaju iz baze
-				-->
+
 				<div class="form-check">
           <label class="form-check-label">
             <input class="form-check-input" type="radio" name="radio" id="radio1" value="option1" checked>
@@ -112,10 +132,7 @@
         </div>
 
         <label for="truck">Broj kamiona</label>
-				<input type="number" class="form-control" id="truck" name="brKamiona" min="1" required>
-				<div class="invalid-feedback">
-        	Molimo unesite ispravan broj kamiona
-      	</div>
+				<input type="number" class="form-control" id="truck" name="brKamiona" min="1" placeholder="3" required>
 
     </div>
 		<button type="submit" class="btn btn-danger">Potvrdi</button>
@@ -134,39 +151,24 @@
 	<form class="container" id="rest">
 		<div class="form-group">
 				<label for="name">Ime</label>
-				<input type="text" class="form-control" id="name" name="ime" required>
-				<div class="invalid-feedback">
-					Molimo unesite ispravno ime
-				</div>
+				<input type="text" class="form-control" id="name" name="ime" placeholder="Pera" required>
 
 				<label for="lastName">Prezime</label>
-				<input type="text" class="form-control" id="lastName" name="prezime" required>
-				<div class="invalid-feedback">
-					Molimo unesite ispravno prezime
-				</div>
+				<input type="text" class="form-control" id="lastName" name="prezime" placeholder="Peric" required>
 
 				<div class="row">
 					<div class="col-md-6">
 						<label for="startDate">Datum pocetka</label>
 						<input type="date" class="form-control" id="startDate" name="pocetakOdmora" required>
-						<div class="invalid-feedback">
-							 Molimo unesite ispravnan datum
-						</div>
 					</div>
 					<div class="col-md-6">
 						<label for="endDate">Datum kraja</label>
 						<input type="date" class="form-control" id="endDate" name="krajOdmora" required>
-						<div class="invalid-feedback">
-							 Molimo unesite ispravnan datum
-						</div>
 					</div>
 				</div>
 
 				<label for="describe">Opis</label>
 				<textarea class="form-control" name="opis" id="describe" placeholder="Ako želite navedite razlog odsustva"></textarea>
-				<div class="invalid-feedback">
-					Molimo unesite kratak opis
-				</div>
 
 		</div>
 		<button type="submit" class="btn btn-danger">Pošalji zahtev</button>
