@@ -178,7 +178,7 @@
 			
 
 		\end{itemize}
-	
+	\newpage
 	\subsubsection{Sluchaj upotrebe - Odgovaranje na onlajn zahtev}
 	
 		\begin{itemize}
@@ -212,7 +212,7 @@
 					\item [2.] Posao je nemoguc1e izvrshiti tog datuma kada je klijent zahtevao. - Obaveshtava se klijent i sluchaj upotrebe se ovde zavrshava.
 				\end{enumerate}
 		\end{itemize}
-	
+	\newpage	
 	\subsubsection{Sluchaj upotrebe - Definisanje zahteva telefonskim putem}
 	
 		\begin{itemize}
@@ -267,7 +267,7 @@ ime, prezime, adresu, broj telefona, imejl, lokaciju otpada, kratak opis shta kl
 
 			
 		\end{itemize}
-	
+	\newpage
 	\subsubsection{Sluchaj upotrebe - Evidentiranje zahteva nakon procenjene vrednosti}
 	
 		\begin{itemize}
@@ -311,7 +311,7 @@ ime, prezime, adresu, broj telefona, imejl, lokaciju otpada, kratak opis shta kl
 				\end{enumerate}
 			
 		\end{itemize}
-	
+	\newpage
 	
 	\subsubsection{Sluchaj upotrebe - Kreiranje radnih naloga}
 	
@@ -334,12 +334,14 @@ ime, prezime, adresu, broj telefona, imejl, lokaciju otpada, kratak opis shta kl
 					\item Koordinator pristupa delu informacionog sistema za kreiranje radnih naloga.
 					\item Koordniator na osnovu raspolozhivog stanja sastavlja radne naloge.
 					\item Koordinator shtampa radne naloge.
+
 				\end{enumerate}
-			
+				
 		\end{itemize}
-	
+		
+
 	%----------------------------------------------------------------
-	
+
 	\subsection{Upravljanje sluzhbom}
 	
 	\begin{figure}[H]
@@ -347,7 +349,7 @@ ime, prezime, adresu, broj telefona, imejl, lokaciju otpada, kratak opis shta kl
 		\includegraphics[width=12cm,height=12cm,keepaspectratio]{slike/UCUpravljanjeSluzbom.png}\\
 		\caption{Dijagram upravljanja sluzhbom}
 	\end{figure}
-	
+	\newpage
 	\subsubsection{Sluchaj uptorebe - Zaposhljavanje radnika}
 		
 		\begin{itemize}
@@ -473,7 +475,7 @@ ime, prezime, adresu, broj telefona, imejl, lokaciju otpada, kratak opis shta kl
 		\includegraphics[width=15cm,height=15cm,keepaspectratio]{slike/UCIznosenjeSmeca.png}\\
 		\caption{Dijagram iznoshenja otpada}
 	\end{figure}
-	
+
 	\textbf{Opis osnovnog sluchaja upotrebe iznoshenja otpada}\\
 		
 	Iznoshenje otpada je proces koji se u zavisnosti od vrste otpada razlichito realizuje.
@@ -522,6 +524,8 @@ ime, prezime, adresu, broj telefona, imejl, lokaciju otpada, kratak opis shta kl
 			
 	\end{itemize}		
 	
+ 	\newpage
+
 	\subsubsection{Sluchaj upotrebe - Iznoshenje opasnog otpada}
 		
 		\begin{itemize}
@@ -829,11 +833,35 @@ ime, prezime, adresu, broj telefona, imejl, lokaciju otpada, kratak opis shta kl
 				\item [5.] Ako nema nijedne ponude. - Sluchaj upotrebe se nastavlja od koraka 3.
 			\end{enumerate}
 			
+			\item\textit{Dodatne informacije}
+            - Klijenti uchestvuju u aukicji tako shto se prethodno uloguju na sistem. U sluchaju da nemaju nalog, moraju se registrovati na sistem.
+			
 		\end{itemize}
 	
 	%------------------------------------------------------
 	
 	\section{Baza podataka}
+		Baza podataka pokriva sve sluchajeve informacionog sistema. Chuva podatke o zaposlenima, o poslovima, vozilima, klijentima, zahtevima, itd...
+		
+		U bazi postoji apstraktni tip entiteta Zaposleni. Iz njega su izvedeni Upravnik, Dispecer, Menadzer prodaje, Koordinator, Radnik, Magacioner i Vozac.
+		
+		Pored njih baza sadrzhi i entitete 
+		Magacin - opisuje podatke o proizvodima koje je magacioner pravilno skladishtio
+		
+		Vozilo - opisuje podatke o svim vozilima koja se koriste u sluzhbi
+		
+		TipOtpada - opisuje vrstu i nivo opasnosti otpada koju sluzhba mozhe da procesuira
+		
+		Zahtevi - opisuje sve zahteve (obradjene i neobradjene) koje klijent i dispecher definishu
+		
+		Poslovi - opisuje poslove koji trebaju ili su vec1 odradjeni
+		
+		Klijent - opisuje klijenta koji zahteva uslugu iznoshenja otpada ili uchestvuje na aukciji
+		
+		Relacija Suspendovani chuva podatke o suspendovanim zaposlenima od strane odredjenog Upravnika.
+		
+		Relacije AngazovaniRadnici i AngazovaniVozaci cuvaju podatke o svim radnicima i vozacima koji su bili angazhovani na odredjenom poslu.
+		
 		
 		Prikaz odgovarajuc1eg dijagrama dat je na slici \ref{fig:BazaPodataka}
 		
@@ -845,7 +873,7 @@ ime, prezime, adresu, broj telefona, imejl, lokaciju otpada, kratak opis shta kl
 		\end{figure}
 
 	%------------------------------------------------------
-	
+	\newpage
 	\section{Arhitektura}
 		
 		Karakteristike arhitekture:
@@ -904,7 +932,7 @@ ime, prezime, adresu, broj telefona, imejl, lokaciju otpada, kratak opis shta kl
 			\caption{Sajt korisnika usluga}
 			\label{fig:StranaKorisnika}
 		\end{figure}
-	
+	\newpage
 	Nakon ulaska na sajt, korisnik ima neku od sledec1ih opcija:
 		\begin{enumerate}
 			\item \textbf{Popunjavanje zahteva za iznoshenjem otpada} - od korisnika se ochekuje da unese podatke i to: ime, prezime, telefon, imejl, lokaciju na kojoj se nalazi otpad, vrstu otpada koju poseduje(opasan otpad,otpad za reciklazhu,kabasti otpad,elektrichni otpad, gradjevinski otpad), krajnji datum kada zheli da se iznese otpad i opis shta tachno poseduje od otpada i kolichinu koju poseduje.
@@ -954,8 +982,9 @@ ime, prezime, adresu, broj telefona, imejl, lokaciju otpada, kratak opis shta kl
 			\caption{Sajt namenjen zaposlenima u firmi}
 			\label{fig:StranaZaposlenih}
 		\end{figure}
-	
-	Zaposleni u firmu imaju vishe moguc1nosti, i svaki zaposlen u firmi ima odredjenu sekciju koja mu je namenjenja. Radi lakshe demontracije oba formulara su stavljena na istu stranu, gde smo pretpostavili da bi pri pristupanju sajtu postojlo logovanje na sistem, stoga bi se svakom zaposlenom prikazivali delovi strane koji ga se tichu. Za potrebe prototipa odluchili smo se da demonstritamo:
+	\newpage
+
+	Zaposleni u firmi imaju vishe moguc1nosti, i svaki zaposlen u firmi ima odredjenu sekciju koja mu je namenjenja. Radi lakshe demontracije oba formulara su stavljena na istu stranu, gde smo pretpostavili da bi pri pristupanju sajtu postojlo logovanje na sistem, stoga bi se svakom zaposlenom prikazivali delovi strane koji ga se tichu. Za potrebe prototipa odluchili smo se da demonstritamo:
 		\begin{enumerate}
 			\item \textbf{Kreiranje radnih naloga} - gde koordinator bira jedan od zahteva, nakon toga bira broj potrebne radne snage i vrstu vozila koja je potreba za obavljanje izabranog zahteva.
 			
