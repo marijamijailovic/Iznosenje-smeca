@@ -75,7 +75,7 @@
 	<h2 class="text-center"> Kreiraj radni nalog: </h2><br/>
 
 
-	<form class="container" id="order" action="createOrdrer" method="get">
+	<form class="container" id="order" action="createOrder.php" method="get">
 		<div class="form-group">
 				<table class="table table-hover table-sm table-bordered">
 					<thead>
