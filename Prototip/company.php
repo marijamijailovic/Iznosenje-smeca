@@ -106,27 +106,27 @@
 
 				<div class="form-check">
           <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="radio" id="radio1" value="option1" checked>
+            <input class="form-check-input" type="radio" name="radio" id="radio1" value="Pikap" checked>
             Pikap
           </label>
         </div>
 
         <div class="form-check">
           <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="radio" id="radio2" value="option2">
+            <input class="form-check-input" type="radio" name="radio" id="radio2" value="Kombi">
             Kombi
           </label>
         </div>
         <div class="form-check">
           <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="radio" id="radio3" value="option3">
+            <input class="form-check-input" type="radio" name="radio" id="radio3" value="Reciklazni kamion">
             Reciklazni kamion
           </label>
         </div>
 
         <div class="form-check">
           <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="radio" id="radio4" value="option4">
+            <input class="form-check-input" type="radio" name="radio" id="radio4" value="Kamion tipa 1">
             Kamion tipa 1
           </label>
         </div>
@@ -148,7 +148,7 @@
 
 	<h2 class="text-center"> Zahtev za odmor: </h2><br/>
 
-	<form class="container" id="rest">
+	<form class="container" id="rest" action = "vacationRequest.php" method = "get">
 		<div class="form-group">
 				<label for="name">Ime</label>
 				<input type="text" class="form-control" id="name" name="ime" placeholder="Pera" required>

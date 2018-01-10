@@ -34,7 +34,15 @@
 	$red = mysqli_fetch_assoc($rezultat);
 	$idZahtev = $red['maxId'] + 1;
 
-	$upit = "insert into
+	if ($vrsta == 3){
+		$upit = "insert into
+						Zahtev(idZahtev,Dispecer_Zaposleni_idZaposleni,tekstZahteva,ocekivanDatumIznosenja,
+										odgovorDispecera,lokacijaOtpada,Klijent_idKlijent,TipOtpada_idTipOtpada)
+						values($idZahtev, 1,'$opis','$datum','menadzer prodaje ce vas kontaktirati radi dogovora', '$lokacija', $id,$vrsta)";
+	}
+	
+	else 
+		$upit = "insert into
 						Zahtev(idZahtev,Dispecer_Zaposleni_idZaposleni,tekstZahteva,ocekivanDatumIznosenja,
 										odgovorDispecera,lokacijaOtpada,Klijent_idKlijent,TipOtpada_idTipOtpada)
 						values($idZahtev, 1,'$opis','$datum','zahtev je primljen na obradjivanje', '$lokacija', $id,$vrsta)";
